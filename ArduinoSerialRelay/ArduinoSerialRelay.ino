@@ -98,5 +98,6 @@ void loop()
             writeByte(bytesOut[i]);
         }
         writeByte(8); // End Message
+        memset(bytesOut, 0, sizeof(bytesOut));
     }
 }
